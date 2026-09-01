@@ -1,3 +1,0 @@
-const prompt = ("prompt-sync");
-const a = prompt("enter la valeur de a");
-const b = prompt("enter la valeur de b");
