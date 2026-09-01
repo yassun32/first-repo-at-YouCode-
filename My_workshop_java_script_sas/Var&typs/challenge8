@@ -1,0 +1,2 @@
+const prompt = ("prompt-sync");
+const a = prompt("enter la valeur de a");

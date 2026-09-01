@@ -1,0 +1,11 @@
+const prompt = require("prompt-sync")();
+const a = prompt ("enter la valeur de a : ");
+const b = prompt ("enter la valeur de b : ");
+let some = parseFloat(a) + parseFloat(b);
+let dif = a - b;
+let mult = a * b;
+let div = a / b;
+console.log("a + b est ",some);
+console.log("a - b est ",dif);
+console.log("a * b est ",mult);
+console.log("a / b est ",div);
