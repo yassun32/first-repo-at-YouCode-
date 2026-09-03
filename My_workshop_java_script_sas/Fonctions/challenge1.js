@@ -4,5 +4,5 @@ function somme(a, b) {
 }
 let result ;
 let a = 3;
-result = somme( a, 5);
+result = somme(a, 5);
 console.log(result);
