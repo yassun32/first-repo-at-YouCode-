@@ -1,0 +1,40 @@
+const prompt = require("prompt-sync")();
+const nb = prompt("enter le nombre d'éléments du 1er tableau : ");
+const nb2 = prompt("enter le nombre d'éléments du 2eme tableau : ");
+let tab = [];
+let dest = [];
+let str = [];
+let i = 0
+while (i < nb) 
+{
+    tab[i] = parseInt(prompt("entre le " + (i + 1) + " element du 1er tableau : "))
+    i++
+}
+i = 0;
+while (i < nb2)
+{
+    dest[i] = parseInt(prompt("entre le " + (i + 1) + " element du 2eme tableau : "))
+    i++
+
+}
+i = 0;
+while (i < nb)
+{
+	str[i] = tab[i]
+        if(i == nb - 1)
+        {
+		i++;
+		for(let j = 0; j < nb2; j++)
+		{
+			str[i] = dest[j]
+			i++;
+		}
+	}
+	i++
+}
+i = 0
+while(i < str[i])
+{
+	console.log(str[i]);
+	i++;
+}
