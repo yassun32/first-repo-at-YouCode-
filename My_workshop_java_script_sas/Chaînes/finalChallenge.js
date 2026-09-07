@@ -5,15 +5,13 @@ let i = 0;
 while (chaine[i]) {
     let j = 0;
     while (mote[j]) {
-        if (chaine[i + j] == mote[j]) {
+        if (chaine[i + j] == mote[j] && mote[j])
             j++;
-        }
-        
-    }
-    if (mote[j] == undefined) {
+        else if (mote[j] == undefined) {
             console.log("la sous-chaîne est trouvée")
             return
-        }
+        }   
+    } 
     i++;
 }
 console.log("la sous-chaîne est non trouvée")
